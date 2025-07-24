@@ -1,0 +1,11 @@
+.swiper-pagination-bullet{
+    background: grey;
+}
+
+.swiper-pagination-bullet:hover{
+    background: yellowgreen;
+}
+
+.swiper-pagination-bullet-active{
+    background: yellow;
+}
