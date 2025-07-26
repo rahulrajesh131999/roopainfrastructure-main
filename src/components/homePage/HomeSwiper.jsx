@@ -35,7 +35,6 @@ const HomeSwiper = ({ image1, image2, image3 }) => {
                 <img
                   src={src}
                   alt={`bannerImage-${index}`}
-                  fetchPriority={index === 0 ? "high" : "auto"}
                   loading={index === 0 ? "eager" : "lazy"}
                   className="h-full w-full " 
                   width="1920"
