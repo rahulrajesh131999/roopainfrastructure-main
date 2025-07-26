@@ -26,12 +26,6 @@ const Navbar = () => {
             src={logo}
             alt=""
             className="h-7 m-2"
-            onClick={() => {
-              const element = document.getElementById("home");
-              element.scrollIntoView({
-                behavior: "smooth",
-              });
-            }}
           />
           <div className="flex flex-col ">
             <h1 className="text-[1.2rem] font-[700] text-[#fcba03] tracking-[0.15rem] m-0 p-0 leading-none">
@@ -50,20 +44,21 @@ const Navbar = () => {
           <div className="fixed top-0 left-0 w-full h-full bg-black opacity-40 z-30"></div>
         )}
         {/* Sidebar */}
-        {showSidebar && (
-          <div>
+
             <div
               ref={ref}
-              className="fixed left-0 top-0 w-[70vw] h-full bg-white z-40 flex flex-col items-center pt-[40vw] gap-4"
+              className={`fixed right-0 bg-black top-0 w-[70vw] h-full z-40 flex flex-col items-center pt-[40vw] gap-4 transition-transform duration-300 ease-in-out transform ${
+                showSidebar ? 'translate-x-0' : 'translate-x-full'
+              }`}
             >
               <div
                 className="flex absolute top-5 left-5"
                 onClick={() => setShowSidebar(false)}
               >
-                <IoClose className="fill-black" />
+                <IoClose className="fill-white" />
               </div>
               <p
-                className="text-black px-6"
+                className="text-white py-4 w-[8rem] border-b text-center"
                 onClick={() => {
                   const element = document.getElementById("home");
                   element.scrollIntoView({
@@ -74,9 +69,9 @@ const Navbar = () => {
                 Home
               </p>
               {navLinks.map((link) => (
-                <div key={link.id} className="text-black px-6">
+                <div key={link.id} className="text-white px-6">
                   <button
-                    className="py-4 border-b"
+                    className="py-4 w-[8rem] border-b"
                     onClick={() => {
                       const element = document.getElementById(`${link.linkid}`);
                       element.scrollIntoView({
@@ -90,8 +85,7 @@ const Navbar = () => {
                 </div>
               ))}
             </div>
-          </div>
-        )}
+
       </div>
 
       {/* desktop nav */}

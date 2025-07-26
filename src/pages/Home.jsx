@@ -51,7 +51,7 @@ const Home = () => {
                 </h1>
               </div>
             </div> */}
-            <div className="container small_container">
+            <div className="container small_container cursor-default">
               <h1 className="small-text  leading-none text-[1.2rem] md:text-[1.5rem] lg:text-[2rem]">Crafting your vision into</h1>
               <h1 className="small-text2 leading-none text-[1.8rem] ml-5 lg:ml-10 text-[#fcba03] md:text-[2rem] lg:text-[3.4rem] ">concrete reality</h1>
             </div>
@@ -61,7 +61,7 @@ const Home = () => {
 
       {/* about section */}
 
-      <section id="about" className="scroll-mt-[100px] mt-[8rem]">
+      <section id="about" className="scroll-mt-[100px] mt-[8rem] cursor-default">
         <div className="container flex flex-col gap-[5.5rem]">
           <div className="w-full flex items-center justify-center">
             <div className="flex flex-col gap-[4rem] lg:gap-0 lg:flex-row items-center justify-between">
@@ -89,9 +89,9 @@ const Home = () => {
                 </p>
               </div>
               <div className="relative">
-                <div className="h-[20rem] w-[20rem] top-8 right-8 lg:h-[26rem] z-10 lg:w-[26rem] absolute border-2 border-white lg:right-10 lg:top-10"></div>
+                <div className="hidden md:block md:h-[20rem] md:w-[20rem] top-8 right-8 lg:h-[26rem] z-10 lg:w-[26rem] absolute border-2 border-white lg:right-10 lg:top-10"></div>
                 <img
-                  className=" h-[20rem] lg:h-[26rem] relative z-20"
+                  className=" h-[20rem] lg:h-[26rem] relative z-20 rounded-md md:rounded-[0rem]"
                   src={aboutus}
                   alt="aboutus"
                   loading="lazy"
@@ -174,7 +174,7 @@ const Home = () => {
 
       {/* services section */}
 
-      <section id="services" className="scroll-mt-[100px] mt-[10rem]">
+      <section id="services" className="scroll-mt-[100px] mt-[10rem] cursor-default">
         <div className="container">
           <div>
             <div className="flex flex-col items-center justify-center gap-2">
@@ -219,14 +219,14 @@ const Home = () => {
 
       <section id="contact" className="scroll-mt-[100px] mt-[8rem] mb-[1rem]">
         <div className="container flex flex-col gap-[5rem] ">
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center cursor-default">
                 <h1 className="text-[3rem]">Contact Us</h1>
                 <p className="text-[1.2rem]">Let’s Build Something Great Together</p>
             </div>
                 <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-[6em]">
                   <iframe className="rounded-[1rem] w-[85%] lg:w-[70%] h-[400px] lg:h-[500px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62862.15946543925!2d76.27092132194205!3d10.026350560424161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080da53444d5e9%3A0xb46c57c6b1bc9aff!2sEdappally%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1753330448979!5m2!1sen!2sin" style={{border:"0"}}  loading="lazy"></iframe>
-                  <div className="flex flex-col items-center lg:items-start gap-[3rem]">
-                    <div className="flex items-center lg:items-start flex-col gap-5">
+                  <div className="flex flex-col items-center lg:items-start gap-[3rem] ">
+                    <div className="flex items-center lg:items-start flex-col gap-5 cursor-default">
                     <h2 className="text-[1.5rem] w-[95%] lg:w-full lg:text-[2rem] leading-none text-center lg:text-start ">Looking for a reliable civil construction partner for your next project?</h2>
                     <h2 className="text-[2.5rem] text-[#fcba03] ">Let's talk.</h2>
                     </div>
@@ -252,7 +252,7 @@ const Home = () => {
       <footer className="bg-[#fcba03] rounded-t-[1rem] text-black mt-[5rem] h-[70%] flex flex-col items-center justify-center">
         <div className="container flex flex-col gap-8 justify-center items-center mt-[4rem]">
           <div className="flex flex-col lg:flex-row gap-[2rem] lg:gap-0 w-full items-center justify-between">
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex items-center justify-center gap-2 cursor-default">
               <img src={logo} alt="logo" className="h-[3rem] w-[3rem]"/>
               <div>
                 <h1 className="text-[2rem] font-bold leading-none">Roopa</h1>
@@ -260,10 +260,30 @@ const Home = () => {
               </div>
             </div>
             <div className="flex gap-8">
-              <p className="text-[1.3rem] font-medium">Home</p>
-              <p className="text-[1.3rem] font-medium">About</p>
-              <p className="text-[1.3rem] font-medium">Services</p>
-              <p className="text-[1.3rem] font-medium">Contact</p>
+              <button onClick={()=>{
+                const element=document.getElementById('about')
+                element.scrollIntoView({
+                  behavior:"smooth"
+                })
+              }} className="text-[1.3rem] cursor-pointer font-medium">About</button>
+              <button onClick={()=>{
+                const element=document.getElementById('services')
+                element.scrollIntoView({
+                  behavior:"smooth"
+                })
+              }} className="text-[1.3rem] cursor-pointer font-medium">Services</button>
+              <button onClick={()=>{
+                const element=document.getElementById('contact')
+                element.scrollIntoView({
+                  behavior:"smooth"
+                })
+              }} className="text-[1.3rem] cursor-pointer font-medium">Contact</button>
+              <button onClick={()=>{
+                const element=document.getElementById('')
+                element.scrollIntoView({
+                  behavior:"smooth"
+                })
+              }} className="text-[1.3rem] font-medium">Home</button>
             </div>
             </div>
           <div className="w-[80vw] bg-black h-[1.3px]"></div>
@@ -282,7 +302,7 @@ const Home = () => {
                   <p>@roopa_n_associates</p>
                 </div>
               </div>
-              <div className="flex mb-[1rem]">
+              <div className="flex mb-[1rem] cursor-default">
           <p>Copyright © 2025. All rights reserved.</p>
         </div>
             </div>
