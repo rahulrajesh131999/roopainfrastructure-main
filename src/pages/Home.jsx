@@ -306,7 +306,7 @@ const Home = () => {
               </button>
               <button
                 onClick={() => {
-                  const element = document.getElementById("");
+                  const element = document.getElementById("home");
                   element.scrollIntoView({
                     behavior: "smooth",
                   });
