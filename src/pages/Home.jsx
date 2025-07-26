@@ -4,56 +4,45 @@ import image1 from "../assets/images/image1.jpg";
 import image2 from "../assets/images/image2.jpg";
 import image3 from "../assets/images/image3.jpg";
 import aboutus from "../assets/images/aboutus.jpg";
-import logo from '../assets/logos/logo.png'
+import logo from "../assets/logos/logo.png";
 import certified from "../assets/logos/aboutcertified.svg";
 import aboutbadge from "../assets/logos/aboutbadge.svg";
 import chatsupport from "../assets/logos/chatsupport.svg";
 import checklist from "../assets/logos/checklist.svg";
 import clockcheck from "../assets/logos/clockcheck.svg";
-import mobilesvg from '../assets/logos/mobilesvgy.svg'
-import mobilesvgBlack from '../assets/logos/mobilesvgBlack.svg'
-import emailblack from '../assets/logos/emailblack.svg'
-import instagramblack from '../assets/logos/instagramblack.svg'
-import emailsvg from '../assets/logos/email.svg'
-import instagramsvg from '../assets/logos/instagramsvg.svg'
+import mobilesvg from "../assets/logos/mobilesvgy.svg";
+import mobilesvgBlack from "../assets/logos/mobilesvgBlack.svg";
+import emailblack from "../assets/logos/emailblack.svg";
+import instagramblack from "../assets/logos/instagramblack.svg";
+import emailsvg from "../assets/logos/email.svg";
+import instagramsvg from "../assets/logos/instagramsvg.svg";
 import servicesbanner from "../assets/images/servicesbanner.jpg";
 import { servicesData } from "../data/servicesData.js";
 import "./Home.css";
+import SEO from "../components/SEO.jsx";
 
 const Home = () => {
-
   return (
     <div className="flex flex-col w-full ">
-      {/* <p onClick={()=>navigate('/p')}>test</p> */}
 
-      {/* banner section */}
+    {/* meta */}
 
+    <SEO title="Home Page" description="This is a Home Page"/>
+
+    
+      {/* hero section */}
       <section id="home">
         <div className="flex relative">
           <HomeSwiper image1={image1} image2={image2} image3={image3} />
           <div className="bg-[#1929ff] opacity-20 absolute left-0 top-0 h-full z-20 pointer-events-none w-[60vw] md:w-[60vw] lg:w-[45vw]"></div>
           <div className="flex pointer-events-auto absolute w-full left-5 lg:left-0 top-20 md:top-30 lg:top-0 lg:top-40 z-30">
-{/*             <div className="container mx-auto px-5 md:px-0 lg:px-0 flex flex-col gap-0">
-              <h2 className="small-text text-[2.5rem] tracking-[0.13rem] md:text-[2rem] lg:text-[3rem] md:tracking-[0.52rem] lg:tracking-[0.95rem] m-0 leading-none ">
-                Arcitecture
-              </h2>
-              <div className="flex place-items-start">
-                <div className="flex flex-col md:mt-[0.1rem] lg:mt-[-0.5rem] ">
-                  <h3 className="small-text2 leading-none text-[2rem] md:text-[1.9rem] lg:text-[4rem]">
-                    is a
-                  </h3>
-                  <p className="small-text3 leading-none text-[1.5rem] font-light md:text-[1.8rem] lg:text-[3rem]">
-                    visual
-                  </p>
-                </div>
-                <h1 className="small-text4 leading-none text-[4.5rem] ml-1 text-[#fcba03] mt-[-0.5rem] md:text-[4.8rem] lg:text-[8rem] lg:mt-[-0.8rem]">
-                  ART
-                </h1>
-              </div>
-            </div> */}
             <div className="container small_container cursor-default">
-              <h1 className="small-text  leading-none text-[1.2rem] md:text-[1.5rem] lg:text-[2rem]">Crafting your vision into</h1>
-              <h1 className="small-text2 leading-none text-[1.8rem] ml-5 lg:ml-10 text-[#fcba03] md:text-[2rem] lg:text-[3.4rem] ">concrete reality</h1>
+              <h1 className="small-text  leading-none text-[1.2rem] md:text-[1.5rem] lg:text-[2rem]">
+                Crafting your vision into
+              </h1>
+              <h1 className="small-text2 leading-none text-[1.8rem] ml-5 lg:ml-10 text-[#fcba03] md:text-[2rem] lg:text-[3.4rem] ">
+                concrete reality
+              </h1>
             </div>
           </div>
         </div>
@@ -61,7 +50,10 @@ const Home = () => {
 
       {/* about section */}
 
-      <section id="about" className="scroll-mt-[100px] mt-[8rem] cursor-default">
+      <section
+        id="about"
+        className="scroll-mt-[100px] mt-[8rem] cursor-default"
+      >
         <div className="container flex flex-col gap-[5.5rem]">
           <div className="w-full flex items-center justify-center">
             <div className="flex flex-col gap-[4rem] lg:gap-0 lg:flex-row items-center justify-between">
@@ -104,7 +96,9 @@ const Home = () => {
 
           <div className="flex flex-col items-center justify-center mt-[5rem]">
             <div className="flex flex-col items-center justify-center gap-4">
-              <h1 className="text-center text-[2rem]">Quality Assurance You Can Rely On</h1>
+              <h1 className="text-center text-[2rem]">
+                Quality Assurance You Can Rely On
+              </h1>
               <p className="text-[1rem] lg:text-[1.2rem] w-[90%] lg:w-[80%] text-center">
                 Quality is the cornerstone of our operations. We follow
                 stringent quality control procedures at every stage of
@@ -174,7 +168,10 @@ const Home = () => {
 
       {/* services section */}
 
-      <section id="services" className="scroll-mt-[100px] mt-[10rem] cursor-default">
+      <section
+        id="services"
+        className="scroll-mt-[100px] mt-[10rem] cursor-default"
+      >
         <div className="container">
           <div>
             <div className="flex flex-col items-center justify-center gap-2">
@@ -219,33 +216,45 @@ const Home = () => {
 
       <section id="contact" className="scroll-mt-[100px] mt-[8rem] mb-[1rem]">
         <div className="container flex flex-col gap-[5rem] ">
-            <div className="flex flex-col items-center justify-center cursor-default">
-                <h1 className="text-[3rem]">Contact Us</h1>
-                <p className="text-[1.2rem]">Let’s Build Something Great Together</p>
-            </div>
-                <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-[6em]">
-                  <iframe className="rounded-[1rem] w-[85%] lg:w-[70%] h-[400px] lg:h-[500px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62862.15946543925!2d76.27092132194205!3d10.026350560424161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080da53444d5e9%3A0xb46c57c6b1bc9aff!2sEdappally%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1753330448979!5m2!1sen!2sin" style={{border:"0"}}  loading="lazy"></iframe>
-                  <div className="flex flex-col items-center lg:items-start gap-[3rem] ">
-                    <div className="flex items-center lg:items-start flex-col gap-5 cursor-default">
-                    <h2 className="text-[1.5rem] w-[95%] lg:w-full lg:text-[2rem] leading-none text-center lg:text-start ">Looking for a reliable civil construction partner for your next project?</h2>
-                    <h2 className="text-[2.5rem] text-[#fcba03] ">Let's talk.</h2>
-                    </div>
-                    <div className="flex w-[80%] lg:w-full flex-col gap-[2rem] lg:gap-[1rem] border-1 border-[#d3d3d3] box-border p-[3rem] rounded-md">
-                      <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5 items-center ">
-                        <img src={mobilesvg} alt="mobile" className="h-[2rem]" />
-                        <h3 className="text-[1.4rem]">+91 99955 53314</h3>
-                      </div>
-                      <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5  items-center">
-                        <img src={emailsvg} alt="email" className="h-[2rem]" />
-                        <h3 className="text-[1.4rem]">roopaandassociates@gmail.com</h3>
-                      </div>
-                      <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5  items-center">
-                        <img src={instagramsvg} alt="email" className="h-[2rem]" />
-                        <h3 className="text-[1.4rem]">@roopa_n_associates</h3>
-                      </div>
-                    </div>
-                  </div>
+          <div className="flex flex-col items-center justify-center cursor-default">
+            <h1 className="text-[3rem]">Contact Us</h1>
+            <p className="text-[1.2rem]">
+              Let’s Build Something Great Together
+            </p>
+          </div>
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-[6em]">
+            <iframe
+              className="rounded-[1rem] w-[85%] lg:w-[70%] h-[400px] lg:h-[500px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62862.15946543925!2d76.27092132194205!3d10.026350560424161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080da53444d5e9%3A0xb46c57c6b1bc9aff!2sEdappally%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1753330448979!5m2!1sen!2sin"
+              style={{ border: "0" }}
+              loading="lazy"
+            ></iframe>
+            <div className="flex flex-col items-center lg:items-start gap-[3rem] ">
+              <div className="flex items-center lg:items-start flex-col gap-5 cursor-default">
+                <h2 className="text-[1.5rem] w-[95%] lg:w-full lg:text-[2rem] leading-none text-center lg:text-start ">
+                  Looking for a reliable civil construction partner for your
+                  next project?
+                </h2>
+                <h2 className="text-[2.5rem] text-[#fcba03] ">Let's talk.</h2>
+              </div>
+              <div className="flex w-[80%] lg:w-full flex-col gap-[2rem] lg:gap-[1rem] border-1 border-[#d3d3d3] box-border p-[3rem] rounded-md">
+                <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5 items-center ">
+                  <img src={mobilesvg} alt="mobile" className="h-[2rem]" />
+                  <h3 className="text-[1.4rem]">+91 99955 53314</h3>
                 </div>
+                <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5  items-center">
+                  <img src={emailsvg} alt="email" className="h-[2rem]" />
+                  <h3 className="text-[1.4rem]">
+                    roopaandassociates@gmail.com
+                  </h3>
+                </div>
+                <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5  items-center">
+                  <img src={instagramsvg} alt="email" className="h-[2rem]" />
+                  <h3 className="text-[1.4rem]">@roopa_n_associates</h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -253,128 +262,83 @@ const Home = () => {
         <div className="container flex flex-col gap-8 justify-center items-center mt-[4rem]">
           <div className="flex flex-col lg:flex-row gap-[2rem] lg:gap-0 w-full items-center justify-between">
             <div className="flex items-center justify-center gap-2 cursor-default">
-              <img src={logo} alt="logo" className="h-[3rem] w-[3rem]"/>
+              <img src={logo} alt="logo" className="h-[3rem] w-[3rem]" />
               <div>
                 <h1 className="text-[2rem] font-bold leading-none">Roopa</h1>
-                <h1 className="text-[2rem] font-bold leading-none">Infrastructures</h1>
+                <h1 className="text-[2rem] font-bold leading-none">
+                  Infrastructures
+                </h1>
               </div>
             </div>
             <div className="flex gap-8">
-              <button onClick={()=>{
-                const element=document.getElementById('about')
-                element.scrollIntoView({
-                  behavior:"smooth"
-                })
-              }} className="text-[1.3rem] cursor-pointer font-medium">About</button>
-              <button onClick={()=>{
-                const element=document.getElementById('services')
-                element.scrollIntoView({
-                  behavior:"smooth"
-                })
-              }} className="text-[1.3rem] cursor-pointer font-medium">Services</button>
-              <button onClick={()=>{
-                const element=document.getElementById('contact')
-                element.scrollIntoView({
-                  behavior:"smooth"
-                })
-              }} className="text-[1.3rem] cursor-pointer font-medium">Contact</button>
-              <button onClick={()=>{
-                const element=document.getElementById('')
-                element.scrollIntoView({
-                  behavior:"smooth"
-                })
-              }} className="text-[1.3rem] font-medium">Home</button>
+              <button
+                onClick={() => {
+                  const element = document.getElementById("about");
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+                className="text-[1.3rem] cursor-pointer font-medium"
+              >
+                About
+              </button>
+              <button
+                onClick={() => {
+                  const element = document.getElementById("services");
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+                className="text-[1.3rem] cursor-pointer font-medium"
+              >
+                Services
+              </button>
+              <button
+                onClick={() => {
+                  const element = document.getElementById("contact");
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+                className="text-[1.3rem] cursor-pointer font-medium"
+              >
+                Contact
+              </button>
+              <button
+                onClick={() => {
+                  const element = document.getElementById("");
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+                className="text-[1.3rem] font-medium"
+              >
+                Home
+              </button>
             </div>
-            </div>
+          </div>
           <div className="w-[80vw] bg-black h-[1.3px]"></div>
           <div className="flex flex-col items-center justify-center gap-[5rem]">
             <div className="flex flex-col lg:flex-row w-[60vw] gap-[2rem] items-center justify-between">
-                <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
-                  <img src={mobilesvgBlack} alt="mobile" className="h-[1.8rem]" />
-                  <p>+91 99955 53314</p>
-                </div>
-                <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
-                  <img src={emailblack} alt="mobile" className="h-[1.8rem]" />
-                  <p>roopaandassociates@gmail.com</p>
-                </div>
-                <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
-                  <img src={instagramblack} alt="mobile" className="h-[1.8rem]" />
-                  <p>@roopa_n_associates</p>
-                </div>
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
+                <img src={mobilesvgBlack} alt="mobile" className="h-[1.8rem]" />
+                <p>+91 99955 53314</p>
               </div>
-              <div className="flex mb-[1rem] cursor-default">
-          <p>Copyright © 2025. All rights reserved.</p>
-        </div>
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
+                <img src={emailblack} alt="mobile" className="h-[1.8rem]" />
+                <p>roopaandassociates@gmail.com</p>
+              </div>
+              <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
+                <img src={instagramblack} alt="mobile" className="h-[1.8rem]" />
+                <p>@roopa_n_associates</p>
+              </div>
             </div>
+            <div className="flex mb-[1rem] cursor-default">
+              <p>Copyright © 2025. All rights reserved.</p>
+            </div>
+          </div>
         </div>
-        
       </footer>
-
-      {/*       <div
-        className=" w-full flex flex-col items-center mt-10"
-        onClick={() => setExpandedId(!expandedId)}
-      >
-        <div className="flex flex-col w-[50vw]">
-          {expandedCards && (
-            <div className="card flex h-[25rem] border rounded-md p-5 flex-col items-center ">
-              <div>{<expandedCards.icon size={40} />}</div>
-              <div className="flex flex-col items-center justify-center">
-                <h1>{expandedCards.title}</h1>
-                <p className="text-justify">{expandedCards.description}</p>
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-
-      <div
-        className="w-full flex items-center justify-center scale-80 md:scale-100"
-      >
-        <div className="grid grid-cols-2 md:grid-cols-4 md:mt-[15vh] w-[98vw] md:w-[80vw] gap-7">
-          {homepageCards.map((cards) => {
-            const isExpanded = expandedId === cards.id;
-
-            return (
-              <div
-                className="flex flex-col m-3"
-              >
-                <div
-                  key={cards.id}
-        onClick={(e) => {
-          e.stopPropagation();
-          expandHandler(cards.id);
-
-          setTimeout(() => {
-            window.scrollBy({
-              top:180,
-              behavior:'smooth'
-            })
-          }, 100);
-        }}
-                  className={`flex justify-center mt-[-3rem] transition-transform duration-[400ms] delay-150 duration ease-in-out hover:scale-110 cursor-pointer`}
-                >
-                  <div className="absolute z-20 translate-y-[-30px] bg-black ">
-                    {<cards.icon size={40} fill="#fcba03" />}
-                  </div>
-                  <div
-                    className={`flex flex-col items-center justify-center border z-10 relative py-2 rounded-md`}
-                  >
-                    <p className="mt-3 text-bold text-center">{cards.title}</p>
-                    <p
-                      className={`mt-2 mb-1 px-3 text-xs text-justify h-[5rem]`}
-                    >
-                      {cards.previewDesc.split(" ").length > 20
-                        ? cards.previewDesc.split(" ").slice(0, 20).join(" ") +
-                          " ..."
-                        : cards.previewDesc}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
     </div>
   );
 };

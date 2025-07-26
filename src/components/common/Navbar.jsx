@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { FaAngleDown } from "react-icons/fa6";
+import {  useNavigate } from "react-router-dom";
 import { navLinks } from "../../data/navbarData";
 import { IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
@@ -19,6 +18,8 @@ const Navbar = () => {
 
   return (
     <header className="text-white sticky top-0 z-100 bg-black">
+
+
       {/* mobile nav */}
       <div className=" md:hidden flex items-center justify-between h-[64px] relative z-50">
         <div className="p-4 flex items-center justify-center">
