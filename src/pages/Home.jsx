@@ -311,7 +311,7 @@ const Home = () => {
                     behavior: "smooth",
                   });
                 }}
-                className="text-[1.3rem] footertext text-black font-medium"
+                className="text-[1.3rem] cursor-pointer footertext text-black font-medium"
               >
                 Home
               </button>
