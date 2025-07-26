@@ -57,4 +57,37 @@ body {
 
   }
 
+  @media (max-width: 360px) {
+    .aboutImage {
+      max-height: 18rem;
+    }
+
+    .qualityText {
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+    .missionVision {
+      font-size: 3rem;
+    }
+
+    .contactText {
+      width: 70%;
+    }
+
+    .contactdet {
+      font-size: 1.2rem;
+    }
+
+    .footerlink {
+      display: flex;
+      gap: 1.3rem;
+      
+    }
+
+    .footertext {
+      font-size: 1.1rem;
+    }
+  }
+
 }

@@ -83,7 +83,7 @@ const Home = () => {
               <div className="relative">
                 <div className="hidden md:block md:h-[20rem] md:w-[20rem] top-8 right-8 lg:h-[26rem] z-10 lg:w-[26rem] absolute border-2 border-white lg:right-10 lg:top-10"></div>
                 <img
-                  className=" h-[20rem] lg:h-[26rem] relative z-20 rounded-md md:rounded-[0rem]"
+                  className="aboutImage h-[20rem] lg:h-[26rem] relative z-20 rounded-md md:rounded-[0rem]"
                   src={aboutus}
                   alt="aboutus"
                   loading="lazy"
@@ -114,27 +114,27 @@ const Home = () => {
                       src={aboutbadge}
                       alt="certified"
                     />
-                    <p>Use of certified, durable materials</p>
+                    <p className="qualityText">Use of certified, durable materials</p>
                   </div>
                   <div className=" flex flex-col lg:flex-row  items-center justify-center gap-[2rem]">
                     <img className="h-[3rem]" src={checklist} alt="certified" />
-                    <p>Thorough site inspections and structural testing</p>
+                    <p className="qualityText">Thorough site inspections and structural testing</p>
                   </div>
                 </div>
                 <div className="flex flex-col items-center lg:items-start justify-center gap-[2rem]">
                   <div className="flex flex-col lg:flex-row items-center justify-center gap-3">
                     <img className="h-[3rem]" src={certified} alt="" />
-                    <p>Adherence to industry codes and regulations</p>
+                    <p className="qualityText">Adherence to industry codes and regulations</p>
                   </div>
                   <div className="flex flex-col lg:flex-row  items-center justify-center gap-3">
                     <img className="h-[3rem]" src={clockcheck} alt="" />
-                    <p>Timely delivery without compromising standards</p>
+                    <p className="qualityText">Timely delivery without compromising standards</p>
                   </div>
                 </div>
               </div>
               <div className="flex mt-2 flex-col lg:flex-row  items-center justify-center gap-3">
                 <img className="h-[3rem]" src={chatsupport} alt="" />
-                <p>Strong focus on client feedback and satisfaction</p>
+                <p className="qualityText">Strong focus on client feedback and satisfaction</p>
               </div>
             </div>
             <p className="text-[1.2rem] mt-[3rem] w-[80%] text-center">
@@ -147,7 +147,7 @@ const Home = () => {
 
           <div className="flex flex-col lg:flex-row items-center gap-[3rem] justify-center mt-[4rem]">
             <div className="flex-1 flex flex-col items-center justify-center gap-[1.5rem]">
-              <h1 className="text-[4rem] text-[#fcba03]">Our Mission</h1>
+              <h1 className="text-[4rem] text-[#fcba03] missionVision">Our Mission</h1>
               <p className="w-[88%] lg:w-full text-center">
                 To construct durable, innovative, and sustainable spaces that
                 uplift communities and empower progress.
@@ -155,7 +155,7 @@ const Home = () => {
             </div>
             <div className="hidden lg:block h-[12rem] p-[0.1px] bg-[#d3d3d3]"></div>
             <div className="flex-1 flex flex-col items-center justify-center gap-[1.5rem]">
-              <h1 className="text-[4rem] text-[#fcba03]">Our Vision</h1>
+              <h1 className="text-[4rem] text-[#fcba03] missionVision">Our Vision</h1>
               <p className="w-[88%] lg:w-full text-center ">
                 To be a leading force in the construction industry, known for
                 our commitment to quality, sectoral expertise, and lasting
@@ -231,7 +231,7 @@ const Home = () => {
             ></iframe>
             <div className="flex flex-col items-center lg:items-start gap-[3rem] ">
               <div className="flex items-center lg:items-start flex-col gap-5 cursor-default">
-                <h2 className="text-[1.5rem] w-[95%] lg:w-full lg:text-[2rem] leading-none text-center lg:text-start ">
+                <h2 className="contactText text-[1.5rem] w-[95%] lg:w-full lg:text-[2rem] leading-none text-center lg:text-start ">
                   Looking for a reliable civil construction partner for your
                   next project?
                 </h2>
@@ -240,17 +240,17 @@ const Home = () => {
               <div className="flex w-[80%] lg:w-full flex-col gap-[2rem] lg:gap-[1rem] border-1 border-[#d3d3d3] box-border p-[3rem] rounded-md">
                 <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5 items-center ">
                   <img src={mobilesvg} alt="mobile" className="h-[2rem]" />
-                  <h3 className="text-[1.4rem]">+91 99955 53314</h3>
+                  <h3 className="contactdet text-[1.4rem]">+91 99955 53314</h3>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5  items-center">
                   <img src={emailsvg} alt="email" className="h-[2rem]" />
-                  <h3 className="text-[1.4rem]">
+                  <h3 className="contactdet text-[1.4rem]">
                     roopaandassociates@gmail.com
                   </h3>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5  items-center">
                   <img src={instagramsvg} alt="email" className="h-[2rem]" />
-                  <h3 className="text-[1.4rem]">@roopa_n_associates</h3>
+                  <h3 className="text-[1.4rem] contactdet">@roopa_n_associates</h3>
                 </div>
               </div>
             </div>
@@ -264,13 +264,13 @@ const Home = () => {
             <div className="flex items-center justify-center gap-2 cursor-default">
               <img src={logo} alt="logo" className="h-[3rem] w-[3rem]" />
               <div>
-                <h1 className="text-[2rem] font-bold leading-none">Roopa</h1>
-                <h1 className="text-[2rem] font-bold leading-none">
+                <h1 className="text-[2rem] font-bold text-black leading-none">Roopa</h1>
+                <h1 className="text-[2rem] font-bold text-black leading-none">
                   Infrastructures
                 </h1>
               </div>
             </div>
-            <div className="flex gap-8">
+            <div className="footerlink flex gap-8">
               <button
                 onClick={() => {
                   const element = document.getElementById("about");
@@ -278,7 +278,7 @@ const Home = () => {
                     behavior: "smooth",
                   });
                 }}
-                className="text-[1.3rem] cursor-pointer font-medium"
+                className="text-[1.3rem] footertext text-black cursor-pointer font-medium"
               >
                 About
               </button>
@@ -289,7 +289,7 @@ const Home = () => {
                     behavior: "smooth",
                   });
                 }}
-                className="text-[1.3rem] cursor-pointer font-medium"
+                className="text-[1.3rem] footertext text-black cursor-pointer font-medium"
               >
                 Services
               </button>
@@ -300,7 +300,7 @@ const Home = () => {
                     behavior: "smooth",
                   });
                 }}
-                className="text-[1.3rem] cursor-pointer font-medium"
+                className="text-[1.3rem] footertext text-black cursor-pointer font-medium"
               >
                 Contact
               </button>
@@ -311,7 +311,7 @@ const Home = () => {
                     behavior: "smooth",
                   });
                 }}
-                className="text-[1.3rem] font-medium"
+                className="text-[1.3rem] footertext text-black font-medium"
               >
                 Home
               </button>
@@ -322,18 +322,18 @@ const Home = () => {
             <div className="flex flex-col lg:flex-row w-[60vw] gap-[2rem] items-center justify-between">
               <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
                 <img src={mobilesvgBlack} alt="mobile" className="h-[1.8rem]" />
-                <p>+91 99955 53314</p>
+                <p className="text-black">+91 99955 53314</p>
               </div>
               <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
                 <img src={emailblack} alt="mobile" className="h-[1.8rem]" />
-                <p>roopaandassociates@gmail.com</p>
+                <p className="text-black">roopaandassociates@gmail.com</p>
               </div>
               <div className="flex flex-col lg:flex-row items-center justify-center gap-2">
                 <img src={instagramblack} alt="mobile" className="h-[1.8rem]" />
-                <p>@roopa_n_associates</p>
+                <p className="text-black">@roopa_n_associates</p>
               </div>
             </div>
-            <div className="flex mb-[1rem] cursor-default">
+            <div className="flex mb-[1rem] text-black cursor-default">
               <p>Copyright © 2025. All rights reserved.</p>
             </div>
           </div>
