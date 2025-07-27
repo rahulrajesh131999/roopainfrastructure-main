@@ -58,6 +58,15 @@ body {
   }
 
   @media (max-width: 360px) {
+
+    .small-text {
+      font-size: 1rem;
+    }
+
+    .small-text2 {
+      font-size: 1.3rem;
+    }
+
     .aboutImage {
       max-height: 18rem;
     }

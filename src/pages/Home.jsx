@@ -40,7 +40,7 @@ const Home = () => {
               <h1 className="small-text  leading-none text-[1.2rem] md:text-[1.5rem] lg:text-[2rem]">
                 Crafting your vision into
               </h1>
-              <h1 className="small-text2 leading-none text-[1.8rem] ml-5 lg:ml-10 text-[#fcba03] md:text-[2rem] lg:text-[3.4rem] ">
+              <h1 className="small-text2 font-bold leading-none text-[1.8rem] ml-2 lg:ml-5 text-[#fcba03] md:text-[2rem] lg:text-[3.4rem] ">
                 concrete reality
               </h1>
             </div>
@@ -240,17 +240,17 @@ const Home = () => {
               <div className="flex w-[80%] lg:w-full flex-col gap-[2rem] lg:gap-[1rem] border-1 border-[#d3d3d3] box-border p-[3rem] rounded-md">
                 <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5 items-center ">
                   <img src={mobilesvg} alt="mobile" className="h-[2rem]" />
-                  <h3 className="contactdet text-[1.4rem]">+91 99955 53314</h3>
+                  <a href="tel:+91 99955 53314" className="contactdet cursor-pointer text-[1.4rem]">+91 99955 53314</a>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5  items-center">
                   <img src={emailsvg} alt="email" className="h-[2rem]" />
-                  <h3 className="contactdet text-[1.4rem]">
+                  <a href="mailto:roopaandassociates@gmail.com" className="contactdet text-[1.4rem]">
                     roopaandassociates@gmail.com
-                  </h3>
+                  </a>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-[0.5rem] lg:gap-5  items-center">
                   <img src={instagramsvg} alt="email" className="h-[2rem]" />
-                  <h3 className="text-[1.4rem] contactdet">@roopa_n_associates</h3>
+                  <a href="https://www.instagram.com/roopa_n_associates?igsh=YWRzamkxMGI5b2E0"  target="_blank" rel="noopener noreferrer" className="text-[1.4rem] contactdet">@roopa_n_associates</a>
                 </div>
               </div>
             </div>

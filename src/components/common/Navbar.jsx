@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-import {  useNavigate } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
 import { navLinks } from "../../data/navbarData";
 import { IoMdMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
@@ -7,10 +6,19 @@ import { onClickOutSide } from "../../utils/onClickOutside";
 import logo from "../../assets/logos/logo.png";
 
 const Navbar = () => {
-  const navigate = useNavigate();
   const ref = useRef();
 
   const [showSidebar, setShowSidebar] = useState(false);
+const [currentHash, setCurrentHash] = useState(window.location.hash);
+
+useEffect(() => {
+  const onHashChange = () => {
+    setCurrentHash(window.location.hash);
+  };
+
+  window.addEventListener("hashchange", onHashChange);
+  return () => window.removeEventListener("hashchange", onHashChange);
+}, []);
 
   onClickOutSide(ref, (e) => {
     setShowSidebar(false);
@@ -74,7 +82,7 @@ const Navbar = () => {
                   <button
                     className="py-4 w-[8rem] border-b"
                     onClick={() => {
-                      const element = document.getElementById(`${link.linkid}`);
+                      const element = document.getElementById(link.linkid);
                       element.scrollIntoView({
                         behavior: "smooth",
                       });
@@ -119,7 +127,7 @@ const Navbar = () => {
               <div key={link.id}>
                 <button
                   onClick={() => {
-                    const element = document.getElementById(`${link.linkid}`);
+                    const element = document.getElementById(link.linkid);
                     element.scrollIntoView({
                       behavior: "smooth",
                     });
@@ -128,10 +136,8 @@ const Navbar = () => {
                     }, 600);
                   }}
                   className={`hover:text-yellow-500 cursor-pointer ${
-                    window.location.hash === `#${link.linkid}`
-                      ? "text-yellow-500"
-                      : ""
-                  }`}
+  currentHash === `#${link.linkid}` ? "text-yellow-500" : ""
+}`}
                 >
                   {link.title}
                 </button>
