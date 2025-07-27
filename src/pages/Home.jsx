@@ -27,7 +27,7 @@ const Home = () => {
 
     {/* meta */}
 
-    <SEO title="Roopa Infrastructure" description="This is a Home Page"/>
+    <SEO title="Roopa Infrastructures" description="This is a Home Page"/>
 
     
       {/* hero section */}

@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className='w-screen min-h-screen flex flex-col bg-black text-white font-inter '>
-      <SEO title='Roopa Infrastructure' description='Welcome to Roopa Infrastructure, building the future. '/>
+      <SEO title='Roopa Infrastructures' description='Welcome to Roopa Infrastructures, building the future. '/>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home/>}/>
