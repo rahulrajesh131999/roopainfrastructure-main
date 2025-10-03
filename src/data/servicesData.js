@@ -26,7 +26,7 @@ export const servicesData = [
     },
     {
         id:6,
-        title:'Drainage & Sewerage Systems',
+        title:'Drainage & Sewage Systems',
         description:'Stormwater drains, underground drainage, and sewage treatment.'
     },
     {
