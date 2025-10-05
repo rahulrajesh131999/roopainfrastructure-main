@@ -35,7 +35,7 @@ const Home = () => {
         <div className="flex relative">
           <HomeSwiper image1={image1} image2={image2} image3={image3} />
           <div className="bg-[#1929ff] opacity-20 absolute left-0 top-0 h-full z-20 pointer-events-none w-[60vw] md:w-[60vw] lg:w-[45vw]"></div>
-          <div className="flex pointer-events-auto absolute w-full left-5 lg:left-0 top-20 md:top-30 lg:top-0 lg:top-40 z-30">
+          <div className="flex pointer-events-auto absolute w-full left-5 lg:left-0 top-20 md:top-30 lg:top-40 z-30">
             <div className="container small_container cursor-default">
               <h1 className="small-text  leading-none text-[1.2rem] md:text-[1.5rem] lg:text-[2rem]">
                 Crafting your vision into
@@ -105,7 +105,7 @@ const Home = () => {
                 construction to ensure:
               </p>
             </div>
-            <div className="flex flex-col gap-5 mt-10 border border-1 border-[#d3d3d3] box-border p-5 lg:p-10 rounded-md">
+            <div className="flex flex-col gap-5 mt-10  border-1 border-[#d3d3d3] box-border p-5 lg:p-10 rounded-md">
               <div className="flex flex-col lg:flex-row items-center justify-center gap-[2rem] lg:gap-[5rem] ">
                 <div className="flex flex-col items-center lg:items-start justify-center gap-[2rem]">
                   <div className=" flex flex-col lg:flex-row items-center justify-center gap-2">
